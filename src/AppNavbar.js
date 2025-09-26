@@ -9,7 +9,7 @@ function AppNavbar({ onFilterChange, activeFilter, counts, onSearchChange }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse id="basic-navbar-nav">
-          <Form className="d-flex mx-auto">
+          <Form className="d-flex mx-auto w-100 w-md-50">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -23,7 +23,7 @@ function AppNavbar({ onFilterChange, activeFilter, counts, onSearchChange }) {
             onSelect={(selectedKey) => onFilterChange(selectedKey)}
           >
             <Nav.Link eventKey="all" active={activeFilter === "all"}>
-              All Tasks{" "}
+              All{" "}
               <Badge pill bg="secondary">
                 {counts.all}
               </Badge>

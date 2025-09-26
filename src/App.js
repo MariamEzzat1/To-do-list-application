@@ -47,7 +47,9 @@ function App() {
   const taskCounts = {
     all: tasks.length,
     completed: tasks.filter((t) => t.isCompleted).length,
-    important: tasks.filter((t) => t.tags.includes("important")).length,
+    important: tasks.filter((t) =>
+      t.tags.some((tag) => tag.toLowerCase() === "important")
+    ).length,
   };
 
   const filteredTasks = useMemo(() => {
@@ -58,7 +60,7 @@ function App() {
         return task.isCompleted;
       }
       if (filter === "important") {
-        return task.tags.includes("important");
+        return task.tags.some((tag) => tag.toLowerCase() === "important");
       }
       return true;
     });
