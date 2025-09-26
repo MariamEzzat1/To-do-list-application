@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# 📝 My To-Do List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A feature-rich and responsive to-do list application built with React. It allows users to efficiently manage their tasks with features like tagging, filtering, searching, and theme customization. All data is saved locally in your browser.
 
-## Available Scripts
+![App Screenshot](To-do.png)
+_(A screenshot of the application would go here, showing the main interface with a few tasks listed.)_
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Full CRUD Functionality**: Add, view, edit, and delete tasks.
+- **Task Completion**: Mark tasks as complete or incomplete with a single click.
+- **Powerful Filtering**:
+  - View all tasks.
+  - View only completed tasks.
+  - View tasks tagged as "important".
+- **Full-Text Search**: Instantly find tasks by searching their title or description.
+- **Task Details**: Click on any task to see a dedicated detail view with its creation date.
+- **Tagging System**: Organize tasks with custom tags (e.g., `work`, `personal`).
+- **Persistent Storage**: Your tasks are automatically saved to the browser's Local Storage, so they'll be there when you come back.
+- **Theming**: Switch between a comfortable Light Mode and a sleek Dark Mode. Your preference is saved automatically.
+- **Responsive Design**: A clean and usable interface on both desktop and mobile devices, built with React-Bootstrap.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React
+- **Routing**: React Router
+- **UI Framework**: React-Bootstrap & Bootstrap 5
+- **State Management**: React Hooks (`useState`, `useEffect`, `useMemo`) & Context API (`useTheme`)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+You need to have Node.js and npm (or Yarn) installed on your machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Navigate to the project directory:**
 
-## Learn More
+   ```sh
+   cd todo-list
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Running the Application
 
-### Code Splitting
+To start the development server, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+npm start
+```
 
-### Analyzing the Bundle Size
+The application will open automatically in your default browser at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `src/App.js`: The main application component that manages all state and logic.
+- `src/components/`: Contains all reusable React components (`AppNavbar`, `TodoList`, `TaskForm`, etc.).
+- `src/ThemeProvider.js`: A React Context provider for managing the light/dark theme.
+- `src/index.js`: The entry point for the React application.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
