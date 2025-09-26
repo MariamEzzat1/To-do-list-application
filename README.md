@@ -2,8 +2,9 @@
 
 A feature-rich and responsive to-do list application built with React. It allows users to efficiently manage their tasks with features like tagging, filtering, searching, and theme customization. All data is saved locally in your browser.
 
-![App Screenshot](To-do.png)
-_(A screenshot of the application would go here, showing the main interface with a few tasks listed.)_
+![App_dark_theme Screenshot](To-do-dark-theme.png) ![App_light_theme Screenshot](To-do-light-theme.png)
+
+![App_light_theme Screenshot](To-do-mobile-view.png)
 
 ---
 
@@ -46,7 +47,7 @@ You need to have Node.js and npm (or Yarn) installed on your machine.
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/MariamEzzat1/To-do-list-application.git
    ```
 
 2. **Navigate to the project directory:**
@@ -72,14 +73,6 @@ The application will open automatically in your default browser at `http://local
 
 ---
 
-## 📂 Project Structure
-
-- `src/App.js`: The main application component that manages all state and logic.
-- `src/components/`: Contains all reusable React components (`AppNavbar`, `TodoList`, `TaskForm`, etc.).
-- `src/ThemeProvider.js`: A React Context provider for managing the light/dark theme.
-- `src/index.js`: The entry point for the React application.
-
----
 
 ## 📄 License
 
