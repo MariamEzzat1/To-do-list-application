@@ -27,6 +27,30 @@
 .App-link {
   color: #61dafb;
 }
+.todo-input {
+  resize: none;
+  border-radius: 10px;
+  border: 2px solid #007bff;
+  padding: 12px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+.todo-card {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.todo-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.completed-task {
+  opacity: 0.6;
+}
+
+.completed-task .card-title {
+  text-decoration: line-through;
+}
 
 @keyframes App-logo-spin {
   from {
